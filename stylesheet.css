@@ -1,0 +1,81 @@
+body {
+  width: 100%;
+  height: 100vh;
+  background:linear-gradient(135deg,#153677,#4e085f);
+}
+  .container {
+    color: #f9f9f9;
+    max-width: 500px;
+    margin: 0 auto;
+    background: linear-gradient(500deg,#153677,#4e085f) no-repeat ;
+
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .task-item {
+    
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .edit-mode .task-text {
+    display: none;
+  }
+
+  .edit-mode .edit-btn,
+  .edit-mode .delete-btn {
+    display: none;
+  }
+
+  .edit-mode .save-btn,
+  .edit-mode .cancel-btn {
+    display: inline-block;
+  }
+
+  .edit-mode input {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .edit-btn,
+  .delete-btn,
+  .save-btn,
+  .cancel-btn {
+    cursor: pointer;
+  }
+
+  .edit-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+  }
+
+  .delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    margin-left: 5px;
+  }
+
+  .save-btn {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    margin-left: 5px;
+  }
+
+  .cancel-btn {
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+    margin-left: 5px;
+  }
